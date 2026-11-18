@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Flame, Wind, Sparkles } from 'lucide-react';
+import { useState } from 'react';
+import { Flame, Wind } from 'lucide-react';
 
 export default function HowToFry() {
   const [method, setMethod] = useState('stovetop'); // 'stovetop' or 'airfryer'

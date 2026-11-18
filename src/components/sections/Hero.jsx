@@ -1,7 +1,6 @@
-import React from 'react';
 import { ShoppingBag } from 'lucide-react';
 
-export default function Hero({ products, activeProduct, onSelectProduct, onQuickView }) {
+export default function Hero({ products, activeProduct, onSelectProduct }) {
   const p = activeProduct;
 
   return (
@@ -43,6 +42,18 @@ export default function Hero({ products, activeProduct, onSelectProduct, onQuick
                 <span className="bg-[#fdf6e9] text-[#c27803] border border-[#f5dfb8] px-2 py-0.5 rounded-full">
                   ⚡ 20s Flash Fry
                 </span>
+              </div>
+
+              {/* Promotional Free Shipping Badges */}
+              <div className="flex flex-wrap items-center gap-1 pt-0.5">
+                <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#fdf6e9] border border-[#c27803]/35 text-[10px] font-semibold text-[#164e3d] shadow-2xs">
+                  <span className="text-[#c27803] font-bold">✓</span>
+                  <span>Free Shipping above ₹999</span>
+                </div>
+                <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#fdf6e9] border border-[#c27803]/35 text-[10px] font-semibold text-[#164e3d] shadow-2xs">
+                  <span className="text-[#c27803] font-bold">✓</span>
+                  <span>First Order: Free Shipping above ₹599</span>
+                </div>
               </div>
 
               {/* Buy Now Button */}
@@ -161,6 +172,18 @@ export default function Hero({ products, activeProduct, onSelectProduct, onQuick
               <span className="inline-flex items-center gap-1.5 bg-[#f8faf8] text-[#55695f] border border-[#e2ebe5] px-2.5 py-1 rounded-full text-[11px]">
                 Pack of {p.weight}
               </span>
+            </div>
+
+            {/* Promotional Free Shipping Badges */}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#fdf6e9] border border-[#c27803]/35 text-xs font-semibold text-[#164e3d] shadow-2xs">
+                <span className="text-[#c27803] font-bold">✓</span>
+                <span>Free Shipping above ₹999</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#fdf6e9] border border-[#c27803]/35 text-xs font-semibold text-[#164e3d] shadow-2xs">
+                <span className="text-[#c27803] font-bold">✓</span>
+                <span>First Order: Free Shipping above ₹599</span>
+              </div>
             </div>
 
             {/* Direct Buy Now Button */}

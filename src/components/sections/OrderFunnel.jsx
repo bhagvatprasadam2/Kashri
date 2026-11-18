@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { User, MapPin, Phone, Sparkles, CheckCircle2, ArrowRight, ArrowLeft, Gift, ShoppingCart } from 'lucide-react';
-import WhatsAppIcon from './WhatsAppIcon';
+import WhatsAppIcon from '../common/WhatsAppIcon';
 import confetti from 'canvas-confetti';
 
 export default function OrderFunnel({ products }) {
@@ -129,7 +129,9 @@ export default function OrderFunnel({ products }) {
         spread: 60,
         origin: { y: 0.6 }
       });
-    } catch (e) {}
+    } catch {
+      // ignore
+    }
   };
 
   const selectedItemsDetails = products.filter(p => formData.selectedProducts.includes(p.id));

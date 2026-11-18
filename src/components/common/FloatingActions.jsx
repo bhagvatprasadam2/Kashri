@@ -1,4 +1,3 @@
-import React from 'react';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export default function FloatingActions() {
@@ -16,3 +15,4 @@ export default function FloatingActions() {
     </aside>
   );
 }
+

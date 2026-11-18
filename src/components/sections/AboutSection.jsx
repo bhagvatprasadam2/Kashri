@@ -1,6 +1,4 @@
-import React from 'react';
-import { Sun, Sparkles, Users } from 'lucide-react';
-import { TRUST_STATS } from '../data/products';
+import { TRUST_STATS } from '../../data/products';
 
 export default function AboutSection() {
   return (

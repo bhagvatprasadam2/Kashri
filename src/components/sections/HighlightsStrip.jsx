@@ -1,4 +1,3 @@
-import React from 'react';
 import { Sun, HeartHandshake, Leaf, Truck } from 'lucide-react';
 
 export default function HighlightsStrip() {

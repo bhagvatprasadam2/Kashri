@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ChevronDown, Sparkles, Check, HelpCircle, Utensils, Heart } from 'lucide-react';
+import { useState } from 'react';
+import { ChevronDown, Check, HelpCircle, Utensils } from 'lucide-react';
 
 export default function IngredientsAndFaq({ activeProduct }) {
   const p = activeProduct;

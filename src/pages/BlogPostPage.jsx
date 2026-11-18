@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, ShoppingBag, ArrowRight } from 'lucide-react';
 import { BLOGS } from '../data/products';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../components/layout/Navbar';
+import Footer from '../components/layout/Footer';
 
 export default function BlogPostPage({ onOpenBulkOrder, onOpenPolicy }) {
   const { blogId } = useParams();

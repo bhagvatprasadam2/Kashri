@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function WhatsAppIcon({ className = "w-5 h-5", ...props }) {
   return (
     <svg 
@@ -13,3 +11,4 @@ export default function WhatsAppIcon({ className = "w-5 h-5", ...props }) {
     </svg>
   );
 }
+
