@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { PRODUCTS } from './data/products';
-import HomePage from './pages/HomePage';
-import BlogPostPage from './pages/BlogPostPage';
-import ProductPage from './pages/ProductPage';
 import { QuickViewModal, BulkOrderModal, PolicyModal } from './components/modals/Modals';
 import FloatingActions from './components/common/FloatingActions';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const ProductPage = lazy(() => import('./pages/ProductPage'));
 
 function ScrollManager() {
   const { pathname, search } = useLocation();
@@ -81,39 +82,41 @@ function App() {
   return (
     <>
       <ScrollManager />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <HomePage
-              activeProduct={activeProduct}
-              setActiveProduct={setActiveProduct}
-              onQuickView={(p) => setQuickViewProduct(p)}
-              onOpenBulkOrder={() => setBulkOrderOpen(true)}
-              onOpenPolicy={(type) => setPolicyType(type)}
-            />
-          }
-        />
-        <Route
-          path="/blog/:blogId"
-          element={
-            <BlogPostPage
-              onOpenBulkOrder={() => setBulkOrderOpen(true)}
-              onOpenPolicy={(type) => setPolicyType(type)}
-            />
-          }
-        />
-        <Route
-          path="/products/:slug"
-          element={
-            <ProductPage
-              onOpenBulkOrder={() => setBulkOrderOpen(true)}
-              onOpenPolicy={(type) => setPolicyType(type)}
-            />
-          }
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                activeProduct={activeProduct}
+                setActiveProduct={setActiveProduct}
+                onQuickView={(p) => setQuickViewProduct(p)}
+                onOpenBulkOrder={() => setBulkOrderOpen(true)}
+                onOpenPolicy={(type) => setPolicyType(type)}
+              />
+            }
+          />
+          <Route
+            path="/blog/:blogId"
+            element={
+              <BlogPostPage
+                onOpenBulkOrder={() => setBulkOrderOpen(true)}
+                onOpenPolicy={(type) => setPolicyType(type)}
+              />
+            }
+          />
+          <Route
+            path="/products/:slug"
+            element={
+              <ProductPage
+                onOpenBulkOrder={() => setBulkOrderOpen(true)}
+                onOpenPolicy={(type) => setPolicyType(type)}
+              />
+            }
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Suspense>
 
       {/* Global Modals accessible from any route */}
       <QuickViewModal

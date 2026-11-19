@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
-import logoImg from '../../assets/logo.webp';
 
 export default function Footer({ onOpenPolicy, onOpenBulkOrder }) {
   const currentYear = new Date().getFullYear();
@@ -43,7 +42,7 @@ export default function Footer({ onOpenPolicy, onOpenBulkOrder }) {
           <div className="lg:col-span-4 space-y-4 pb-2 md:pb-0 border-b border-[#113e30] md:border-none">
             <div className="flex items-center gap-3">
               <img
-                src={logoImg}
+                src="/logo.webp"
                 alt="Bhagvat Prasadam Heritage Marcha Kachri Logo"
                 width="56"
                 height="56"

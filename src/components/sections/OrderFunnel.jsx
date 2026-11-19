@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { User, MapPin, Phone, Sparkles, CheckCircle2, ArrowRight, ArrowLeft, Gift, ShoppingCart } from 'lucide-react';
 import WhatsAppIcon from '../common/WhatsAppIcon';
-import confetti from 'canvas-confetti';
 
 export default function OrderFunnel({ products }) {
   const [currentStep, setCurrentStep] = useState(0);
@@ -123,15 +122,16 @@ export default function OrderFunnel({ products }) {
 
   const handleFinalSubmit = () => {
     setSubmitted(true);
-    try {
-      confetti({
-        particleCount: 80,
-        spread: 60,
-        origin: { y: 0.6 }
-      });
-    } catch {
-      // ignore
-    }
+    import('canvas-confetti')
+      .then((module) => {
+        const confetti = module.default;
+        confetti({
+          particleCount: 80,
+          spread: 60,
+          origin: { y: 0.6 }
+        });
+      })
+      .catch(() => {});
   };
 
   const selectedItemsDetails = products.filter(p => formData.selectedProducts.includes(p.id));

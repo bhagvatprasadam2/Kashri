@@ -4,8 +4,8 @@
  */
 
 export const DEFAULT_SEO = {
-  title: 'Kashri – Authentic Gujarati Sun-Dried Delicacies Online',
-  description: 'Discover authentic Gujarati Marcha Kashri and traditional sun-dried delicacies. Explore delicious Gujarati food products and order online.',
+  title: 'Buy Gujarati Marcha Kashri Online | Traditional Gujarati Delicacies – Kashri',
+  description: 'Shop authentic Gujarati Marcha Kashri and traditional sun-dried delicacies online. Discover quality Gujarati specialties from Kashri and order online.',
   canonicalUrl: 'https://kashri.megascale.co.in/',
   ogImage: 'https://kashri.megascale.co.in/vadhvani-marcha-kashri.webp',
   ogType: 'website'

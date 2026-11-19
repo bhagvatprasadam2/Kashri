@@ -10,8 +10,8 @@ export const PRODUCTS = [
     "fullName": "Vadhvani Marcha Kashri",
     "gujaratiName": "વઢવાણી મરચા કાચરી",
     "hindiName": "वढ़वाणी हरी मिर्च काचरी",
-    "transparentImage": "/vadhvani-transparent.webp",
-    "bannerImage": "/vadhvani-transparent.webp",
+    "transparentImage": "/vadhvani-marcha-kashri.webp",
+    "bannerImage": "/vadhvani-marcha-kashri.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/vadhvani-marcha-kachri-વઢવાણી-મરચા-કાચરી-dried-green-chilli-traditional-gujarati-delicacy",
     "category": "Spicy Chillies",
     "subheading": "Authentic sun dried buttermilk cured green chillies from Surendranagar",
@@ -24,7 +24,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/vadavani-marcha.jpg?v=1782468217",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/vadavani-marcha.jpg?v=1782468217",
     "gallery": [
-      "/vadhvani-transparent.webp",
+      "/vadhvani-marcha-kashri.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/vadavani-marcha.jpg?v=1782468217",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/d51798a1d9bf48a72cec98a170c3b902.webp?v=1781870940"
     ],
@@ -119,8 +119,8 @@ export const PRODUCTS = [
     "fullName": "Marcha Kashri",
     "gujaratiName": "મરચા કાચરી",
     "hindiName": "हरी मिर्च काचરી",
-    "transparentImage": "/marcha-transparent.webp",
-    "bannerImage": "/marcha-transparent.webp",
+    "transparentImage": "/gujarati-marcha-kashri.webp",
+    "bannerImage": "/gujarati-marcha-kashri.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/marcha-kachri-મરચા-કાચરી-dried-green-chilli-sticks-traditional-gujarati-snack",
     "category": "Spicy Chillies",
     "subheading": "Crispy sun dried salted green chilli sticks for everyday thali",
@@ -133,7 +133,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/marcha-kachri.jpg?v=1782468226",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/marcha-kachri.jpg?v=1782468226",
     "gallery": [
-      "/marcha-transparent.webp",
+      "/gujarati-marcha-kashri.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/marcha-kachri.jpg?v=1782468226"
     ],
     "description": "Traditional Gujarati Marcha kashri by Bhagvat Prasadam is crafted from farm fresh green chillies that are slit, salted with rock salt, and cured under pristine Gujarat sunshine. Flash fry these crispy green chilli sticks for 20 seconds to add an appetizing spicy crunch to simple Dal Bhat, Kadhi Khichdi, warm Thepla, or your evening cup of tea. Made with zero preservatives for pure homemade quality.",
@@ -209,8 +209,8 @@ export const PRODUCTS = [
     "fullName": "Bhinda Kashri",
     "gujaratiName": "ભીંડા કાચરી",
     "hindiName": "भिंडी काचરી",
-    "transparentImage": "/bhinda-transparent.webp",
-    "bannerImage": "/bhinda-transparent.webp",
+    "transparentImage": "/gujarati-bhinda-kashri.webp",
+    "bannerImage": "/gujarati-bhinda-kashri.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/bhinda-kachri-okra-lady-finger-traditional-dried-vegetable",
     "category": "Vegetable Kachri",
     "subheading": "Tender sun dried ladyfinger okra crisps with zero stickiness",
@@ -223,7 +223,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bhinda-kachri.jpg?v=1782468217",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bhinda-kachri.jpg?v=1782468217",
     "gallery": [
-      "/bhinda-transparent.webp",
+      "/gujarati-bhinda-kashri.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bhinda-kachri.jpg?v=1782468217"
     ],
     "description": "Bhinda kashri by Bhagvat Prasadam transforms fresh tender ladyfinger into a crunchy delight. Young green okra is sliced and sun dried naturally until moisture is completely eliminated, removing all stickiness. When flash fried or air fried, Bhinda kashri turns into airy, crisp vegetable chips that pair deliciously with Marcha kashri, Khichdi, Dal Rice, or as a wholesome evening snack for children and adults.",
@@ -298,8 +298,8 @@ export const PRODUCTS = [
     "fullName": "Karela Kashri",
     "gujaratiName": "કારેલા કાશરી",
     "hindiName": "करेला काशरी",
-    "transparentImage": "/karela-transparent.webp",
-    "bannerImage": "/karela-transparent.webp",
+    "transparentImage": "/gujarati-karela-kashri.webp",
+    "bannerImage": "/gujarati-karela-kashri.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/karela-kashri-pure-dried-bitter-gourd",
     "category": "Healthy Superfoods",
     "subheading": "Sun cured bitter gourd rings seasoned with turmeric and rock salt",
@@ -312,7 +312,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/karela-kachri.jpg?v=1782468226",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/karela-kachri.jpg?v=1782468226",
     "gallery": [
-      "/karela-transparent.webp",
+      "/gujarati-karela-kashri.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/karela-kachri.jpg?v=1782468226"
     ],
     "description": "Karela kashri by Bhagvat Prasadam is a cherished traditional wellness accompaniment. Fresh farm bitter gourds are cut into thin round rings, steeped with turmeric and Himalayan rock salt to soften the sharp bitterness, and sun dried to crisp perfection. Flash fry or air fry for a crunchy, savory side dish that pairs wonderfully with Marcha kashri, everyday Dal Roti, or warm Curd Rice.",
@@ -387,8 +387,8 @@ export const PRODUCTS = [
     "fullName": "Kothimba Kashari",
     "gujaratiName": "કોઠીંબા કાશરી",
     "hindiName": "कचરી કોથિમ્બા",
-    "transparentImage": "/kothimba-transparent.webp",
-    "bannerImage": "/kothimba-transparent.webp",
+    "transparentImage": "/gujarati-kothimba-kashari.webp",
+    "bannerImage": "/gujarati-kothimba-kashari.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/kothimba-kashari-cucumis-callosus-exotic-vegetable-by-bhagvat-prasadam",
     "category": "Exotic Vegetables",
     "subheading": "Sun dried wild kothimda melon slices with a natural tangy flavor",
@@ -401,7 +401,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/kotimba-kasri.jpg?v=1782468217",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/kotimba-kasri.jpg?v=1782468217",
     "gallery": [
-      "/kothimba-transparent.webp",
+      "/gujarati-kothimba-kashari.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/kotimba-kasri.jpg?v=1782468217"
     ],
     "description": "Kothimba kashari by Bhagvat Prasadam is one of rural Gujarat rarest culinary treasures. Small wild cucumis callosus melons known locally as kothimda are gathered from arid Saurashtra fields, sliced, and sun dried with sea salt. Offering a distinctive sharp tanginess, Kothimba kashari can be flash fried as a zesty crunchy chip alongside Marcha kashri, or dropped directly into boiling Kathiyawadi Kadhi and curries as a natural souring ingredient.",
@@ -476,8 +476,8 @@ export const PRODUCTS = [
     "fullName": "Guvar Kashari",
     "gujaratiName": "ગુવાર કાશરી",
     "hindiName": "ग्वार काशरी",
-    "transparentImage": "/guvar-transparent.webp",
-    "bannerImage": "/guvar-transparent.webp",
+    "transparentImage": "/gujarati-guvar-kashari.webp",
+    "bannerImage": "/gujarati-guvar-kashari.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/guvar-kashari",
     "category": "Vegetable Kachri",
     "subheading": "Sun dried tender cluster beans seasoned with turmeric and rock salt",
@@ -490,7 +490,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/guvar-kashri.jpg?v=1782468226",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/guvar-kashri.jpg?v=1782468226",
     "gallery": [
-      "/guvar-transparent.webp",
+      "/gujarati-guvar-kashari.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/guvar-kashri.jpg?v=1782468226"
     ],
     "description": "Guvar kashari by Bhagvat Prasadam brings the nutty roasted crunch of tender cluster beans to your table. Young guvar fali beans are blanched with turmeric and rock salt, then slow cured under the warm sun until brittle. Known in South India as kothavarangai vathal and in Gujarat as Guvar kashari, these dried beans fry in 20 seconds into a crunchy side that pairs heavenly with Marcha kashri, Curd Rice, Sambar, and Moong Dal Khichdi.",
@@ -565,8 +565,8 @@ export const PRODUCTS = [
     "fullName": "Bharela Marcha Kashri",
     "gujaratiName": "ભરેલા મરચા",
     "hindiName": "भरवा मिर्च काचરી",
-    "transparentImage": "/bharela-transparent.webp",
-    "bannerImage": "/bharela-transparent.webp",
+    "transparentImage": "/gujarati-bharela-marcha-kashri.webp",
+    "bannerImage": "/gujarati-bharela-marcha-kashri.webp",
     "productUrl": "https://www.bhagvatprasadam.com/products/bharela-marcha-ભરેલા-મરચા-stuffed-green-chilli-traditional-delicacy",
     "category": "Spicy Chillies",
     "subheading": "Green chillies stuffed with traditional methi and mustard kuria spices",
@@ -579,7 +579,7 @@ export const PRODUCTS = [
     "image": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bharela-marcha.jpg?v=1782468226",
     "mainImage": "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bharela-marcha.jpg?v=1782468226",
     "gallery": [
-      "/bharela-transparent.webp",
+      "/gujarati-bharela-marcha-kashri.webp",
       "https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bharela-marcha.jpg?v=1782468226"
     ],
     "description": "Bharela Marcha kashri by Bhagvat Prasadam is the crown jewel of Kathiyawadi cuisine. Selected whole green chillies are slit and generously stuffed with grandmother signature blend of split fenugreek methi kuria, split mustard rai kuria, hing, and rock salt, then carefully cured under the Gujarat sun. Flash fry for 20 seconds to release an irresistible savory aroma that turns everyday Dal Bhat, Khichdi, and Rotlo into a celebratory feast.",

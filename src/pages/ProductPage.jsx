@@ -249,7 +249,7 @@ export default function ProductPage({ onOpenBulkOrder, onOpenPolicy }) {
                 className="block w-full flex items-center justify-center group cursor-pointer"
               >
                 <img
-                  src={`/${seo.imageFilename || 'vadhvani-transparent.webp'}`}
+                  src={`/${seo.imageFilename || 'vadhvani-marcha-kashri.webp'}`}
                   alt={seo.altText || `${product.name} - Traditional Gujarati Delicacy`}
                   width="420"
                   height="420"
@@ -616,7 +616,7 @@ export default function ProductPage({ onOpenBulkOrder, onOpenPolicy }) {
                 <div>
                   <div className="w-full aspect-square flex items-center justify-center p-2 mb-2 bg-white rounded-xl border border-[#e2ebe5]">
                     <img
-                      src={`/${item.seo?.imageFilename || item.transparentImage || 'vadhvani-transparent.webp'}`}
+                      src={`/${item.seo?.imageFilename || item.transparentImage || 'vadhvani-marcha-kashri.webp'}`}
                       alt={item.name}
                       loading="lazy"
                       className="max-h-[85px] w-auto object-contain group-hover:scale-105 transition-transform"

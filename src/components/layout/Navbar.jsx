@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, ShoppingBag } from 'lucide-react';
-import logoImg from '../../assets/logo.webp';
 import AnnouncementBar from '../common/AnnouncementBar';
 
 export default function Navbar() {
@@ -97,7 +96,7 @@ export default function Navbar() {
               className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group"
             >
               <img
-                src={logoImg}
+                src="/logo.webp"
                 alt="Bhagvat Prasadam Heritage Kashri Logo"
                 width="56"
                 height="56"
