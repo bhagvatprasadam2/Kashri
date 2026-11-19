@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kashri.megascale.co.in/sitemap.xml
+Sitemap: https://kashri.megascale.co.in/sitemap_index.xml
 Sitemap: https://kashri.megascale.co.in/sitemap.txt
