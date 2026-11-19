@@ -3,6 +3,7 @@ import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-
 import { PRODUCTS } from './data/products';
 import HomePage from './pages/HomePage';
 import BlogPostPage from './pages/BlogPostPage';
+import ProductPage from './pages/ProductPage';
 import { QuickViewModal, BulkOrderModal, PolicyModal } from './components/modals/Modals';
 import FloatingActions from './components/common/FloatingActions';
 
@@ -97,6 +98,15 @@ function App() {
           path="/blog/:blogId"
           element={
             <BlogPostPage
+              onOpenBulkOrder={() => setBulkOrderOpen(true)}
+              onOpenPolicy={(type) => setPolicyType(type)}
+            />
+          }
+        />
+        <Route
+          path="/products/:slug"
+          element={
+            <ProductPage
               onOpenBulkOrder={() => setBulkOrderOpen(true)}
               onOpenPolicy={(type) => setPolicyType(type)}
             />

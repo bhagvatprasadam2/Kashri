@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ShoppingBag } from 'lucide-react';
 
 export default function Hero({ products, activeProduct, onSelectProduct }) {
@@ -63,17 +64,23 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
                 </div>
               </div>
 
-              {/* Buy Now Button */}
+              {/* Buy Now & Product Page Details Buttons */}
               <div className="flex items-center gap-1.5 pt-0.5">
                 <a
                   href={p.productUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 bg-[#164e3d] hover:bg-[#113e30] text-white px-5 py-2 rounded-xl font-bold text-xs shadow-sm active:scale-95 transition-all cursor-pointer"
+                  className="inline-flex items-center justify-center gap-1.5 bg-[#164e3d] hover:bg-[#113e30] text-white px-4 py-2 rounded-xl font-bold text-xs shadow-sm active:scale-95 transition-all cursor-pointer"
                 >
                   <ShoppingBag className="w-3.5 h-3.5" />
                   <span>Buy Now</span>
                 </a>
+                <Link
+                  to={p.seo?.url || `/products/${p.id}`}
+                  className="inline-flex items-center justify-center px-3 py-2 rounded-xl font-bold text-xs border border-[#164e3d] text-[#164e3d] hover:bg-[#eaf2ee] transition-all cursor-pointer"
+                >
+                  Details
+                </Link>
               </div>
             </div>
 
@@ -197,7 +204,7 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
               </div>
             </div>
 
-            {/* Direct Buy Now Button */}
+            {/* Direct Buy Now & Product Page Details Buttons */}
             <div className="flex items-center gap-3 pt-1">
               <a
                 href={p.productUrl}
@@ -208,6 +215,12 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
                 <ShoppingBag className="w-4 h-4 lg:w-5 lg:h-5" />
                 <span>Buy Now</span>
               </a>
+              <Link
+                to={p.seo?.url || `/products/${p.id}`}
+                className="inline-flex items-center justify-center px-5 lg:px-6 py-2.5 lg:py-3.5 rounded-xl font-bold text-xs lg:text-sm xl:text-base border-2 border-[#164e3d] text-[#164e3d] hover:bg-[#eaf2ee] transition-all cursor-pointer"
+              >
+                <span>View Product Details</span>
+              </Link>
             </div>
 
             {/* Product Switcher: Compact 7-Column Grid in a Single Row */}

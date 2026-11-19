@@ -17,7 +17,7 @@ export default function AboutSection() {
           </p>
 
           <p className="text-[#55695f] leading-relaxed text-sm sm:text-base mt-4 max-w-2xl mx-auto">
-            For generations across Saurashtra, summers meant curing fresh green chillies and vegetables under the warm sun. At Bhagvat Prasadam, we follow that same grandmother's recipe with fresh local produce, cultured buttermilk, turmeric, and rock salt. No machines, no chemical preservatives, just honest homemade taste for your family thali.
+            For generations across Saurashtra, summers meant preparing authentic Gujarati sun dried food and traditional Gujarati delicacies by curing fresh vegetables and chillies under the open sun. At Bhagvat Prasadam, we carry forward this 50-year heritage of traditional Marcha Kashri and authentic Gujarati food products. Handcrafted with local farm produce, cultured buttermilk, turmeric, and rock salt—no machines, zero artificial preservatives, just honest homemade taste for your family thali when you buy Gujarati Kashri online.
           </p>
         </div>
 

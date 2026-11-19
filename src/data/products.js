@@ -37,16 +37,20 @@ export const PRODUCTS = [
       "Afternoon Masala Chaas and Fafda"
     ],
     "seoKeywords": [
+      "kashri online",
+      "buy gujarati kashri online",
       "marcha kashri",
+      "traditional marcha kashri",
+      "gujarati sun dried food",
+      "gujarati traditional food online",
+      "gujarati delicacies",
+      "traditional gujarati delicacies",
+      "gujarati food products",
+      "authentic gujarati food products",
+      "gujarati pickles",
+      "buy gujarati pickles online",
       "vadhvani marcha kashri",
-      "gujarati marcha kashri",
-      "marcha kachri",
-      "sun dried green chillies",
-      "buttermilk cured chillies",
-      "surendranagar vadhvani marcha",
-      "kathiyawadi accompaniments for khichdi",
-      "buy marcha kashri online",
-      "crispy fried chillies for dal rice"
+      "buttermilk cured chillies"
     ],
     "ingredients": [
       "Fresh Vadhvan Green Chillies",
@@ -61,6 +65,25 @@ export const PRODUCTS = [
       "Made with 100 percent natural ingredients without preservatives or chemicals",
       "The classic Kathiyawadi Marcha kashri accompaniment for daily meals"
     ],
+    "seo": {
+    "metaTitle": "Buy Vadhvani Marcha Kashri Online | Kashri",
+    "h1": "Authentic Vadhvani Marcha Kashri",
+    "url": "/products/vadhvani-marcha-kashri",
+    "slug": "vadhvani-marcha-kashri",
+    "legacyId": "vadhvani-marcha-kachri",
+    "imageFilename": "vadhvani-marcha-kashri.webp",
+    "altText": "Authentic Vadhvani Marcha Kashri traditional sun-dried green chilli",
+    "metaDescription": "Buy authentic Vadhvani Marcha Kashri online. Famous Surendranagar thick-skinned chillies steeped in spiced buttermilk and naturally sun-cured. 100% pure Kathiyawadi delicacy.",
+    "price": "149",
+    "structuredDetails": {
+        "ingredients": "Handpicked thick-skinned Vadhvan green chillies, cultured sour buttermilk (Chaas), natural rock salt (Sindhav), and sun-cured turmeric powder. 100% natural with zero artificial preservatives or chemicals.",
+        "tasteAndFlavour": "Rich succulent crunch with bold Kathiyawadi buttermilk tanginess and balanced medium spicy warmth that bursts with flavor when flash fried.",
+        "preparationMethod": "Deep-fry in medium-hot oil for 15 to 20 seconds until lightly puffed and golden yellow, then drain on kitchen paper. Or air-fry with a light oil spray at 175°C (350°F) for 3 minutes.",
+        "packagingSize": "Available in 100g, 250g, and 500g nitrogen-flushed, airtight food-grade barrier pouches.",
+        "storageInstructions": "Store in an airtight container in a cool, dry place away from direct moisture. Stays fresh and crisp for up to 12 months.",
+        "deliveryInformation": "Dispatched within 24 hours. Express doorstep delivery across 25,000+ Indian pincodes in 2 to 4 business days for Gujarat and Maharashtra, and 4 to 6 days for other states."
+    }
+},
     "faqs": [
       {
         "q": "What makes Vadhvani Marcha kashri unique?",
@@ -77,6 +100,14 @@ export const PRODUCTS = [
       {
         "q": "How long does this product stay fresh?",
         "a": "Kept in an airtight moisture proof container, it remains completely crisp for up to 12 months."
+      },
+      {
+        "q": "How can I buy Gujarati Kashri online with fast delivery?",
+        "a": "You can buy authentic Gujarati Kashri online directly through our website or the Bhagvat Prasadam mobile app. We offer fast doorstep delivery across all Indian states with airtight protective packaging."
+      },
+      {
+        "q": "How does Traditional Marcha Kashri differ from Gujarati pickles?",
+        "a": "While Gujarati pickles (athana) are preserved in oil and spices, Traditional Marcha Kashri is genuine Gujarati sun dried food cured purely in sour cultured buttermilk, turmeric, and rock salt, requiring a quick 20-second flash fry for a crunchy, oil-free side accompaniment."
       }
     ]
   },
@@ -135,6 +166,25 @@ export const PRODUCTS = [
       "Free from synthetic additives, artificial colors, and chemicals",
       "The ideal spicy Marcha kashri side for quick lunch and dinner"
     ],
+    "seo": {
+    "metaTitle": "Buy Gujarati Marcha Kashri Online | Kashri",
+    "h1": "Traditional Gujarati Marcha Kashri",
+    "url": "/products/gujarati-marcha-kashri",
+    "slug": "gujarati-marcha-kashri",
+    "legacyId": "marcha-kachri",
+    "imageFilename": "gujarati-marcha-kashri.webp",
+    "altText": "Gujarati traditional Marcha Kashri food product",
+    "metaDescription": "Buy authentic traditional Gujarati Marcha Kashri online. Handcrafted buttermilk-cured sun-dried green chilli sticks from Saurashtra. Crispy flash-fry thali delicacy.",
+    "price": "139",
+    "structuredDetails": {
+        "ingredients": "Farm-fresh slender green chillies (લીલા મરચાં), cultured sour buttermilk (Chaas), pure Himalayan rock salt, and organic turmeric powder. 100% pure, natural, and preservative-free.",
+        "tasteAndFlavour": "Zesty, appetizing spicy kick balanced by cultured buttermilk tang and earthy rock salt. Blisters into an ultra-crisp, crunchy side accompaniment.",
+        "preparationMethod": "Slide into hot oil for 15 to 20 seconds until puffed and golden; remove and drain. For air-frying, lightly mist with oil and air-fry at 175°C for 2.5 to 3 minutes.",
+        "packagingSize": "Available in 100g, 250g, and 500g multi-layer resealable ziplock pouches with moisture barrier lining.",
+        "storageInstructions": "Keep in a cool, dry pantry in an airtight glass or steel jar. Avoid wet utensils. Shelf life is 12 months.",
+        "deliveryInformation": "All-India delivery to over 25,000 pincodes via express couriers. Packed in tamper-evident shock-absorbent cartons."
+    }
+},
     "faqs": [
       {
         "q": "How does Marcha kashri differ from Vadhvani chillies?",
@@ -204,6 +254,25 @@ export const PRODUCTS = [
       "Pure natural preparation with zero chemical preservatives",
       "Pairs wonderfully with traditional Marcha kashri on any thali"
     ],
+    "seo": {
+    "metaTitle": "Buy Gujarati Bhinda Kashri Online | Sun-Dried Okra Chips",
+    "h1": "Traditional Gujarati Bhinda Kashri",
+    "url": "/products/gujarati-bhinda-kashri",
+    "slug": "gujarati-bhinda-kashri",
+    "legacyId": "bhinda-kachri",
+    "imageFilename": "gujarati-bhinda-kashri.webp",
+    "altText": "Gujarati traditional Bhinda Kashri sun-dried okra chips",
+    "metaDescription": "Buy traditional Gujarati Bhinda Kashri online. Farm-fresh tender okra sun-dried naturally to eliminate stickiness. Crispy 20-second fry Kathiyawadi vegetable chips.",
+    "price": "159",
+    "structuredDetails": {
+        "ingredients": "Fresh tender young ladyfinger (ભીંડા), Himalayan rock salt, organic turmeric, and cultured buttermilk wash. 100% vegan, gluten-free, zero chemicals.",
+        "tasteAndFlavour": "Nutty, earthy, and exceptionally crispy with zero slime or stickiness. A savory solar-dried vegetable chip enjoyed by all age groups.",
+        "preparationMethod": "Flash-fry in hot oil for 15 to 20 seconds until brittle and golden. Or air-fry at 160°C for 3 to 4 minutes with a light cooking spray.",
+        "packagingSize": "Available in 100g, 250g, and 500g hermetically sealed freshness packs.",
+        "storageInstructions": "Store in an airtight container away from steam and humidity. Retains maximum crispiness for 12 months.",
+        "deliveryInformation": "Express pan-India delivery with protective bubble-cushioned packaging. Standard delivery in 3 to 5 business days."
+    }
+},
     "faqs": [
       {
         "q": "Is Bhinda kashri sticky like fresh okra?",
@@ -273,6 +342,25 @@ export const PRODUCTS = [
       "Pure solar dried without chemical additives or preservatives",
       "Can be prepared oil free in an air fryer or roasted on a tava"
     ],
+    "seo": {
+    "metaTitle": "Buy Gujarati Karela Kashri Online | Sun-Dried Bitter Gourd",
+    "h1": "Traditional Gujarati Karela Kashri",
+    "url": "/products/gujarati-karela-kashri",
+    "slug": "gujarati-karela-kashri",
+    "legacyId": "karela-kachri",
+    "imageFilename": "gujarati-karela-kashri.webp",
+    "altText": "Gujarati traditional Karela Kashri sun-dried bitter gourd rings",
+    "metaDescription": "Buy Gujarati Karela Kashri online. Solar-cured bitter gourd rings steeped in buttermilk and turmeric. Diabetic-friendly, antioxidant-rich Kathiyawadi vegetable crisps.",
+    "price": "159",
+    "structuredDetails": {
+        "ingredients": "Fresh bitter gourd rings (કારેલા), natural rock salt, organic turmeric powder, and cultured buttermilk. 100% natural and preservative-free.",
+        "tasteAndFlavour": "Mild appetizing herbal bitterness tempered by cultured buttermilk tang and mineral-rich rock salt. Crunchy, savory, and diabetic-friendly.",
+        "preparationMethod": "Fry in medium-hot oil for 20 to 25 seconds until dark golden and crispy. Or air-fry at 170°C for 3.5 minutes for an oil-free healthy crunch.",
+        "packagingSize": "Available in 100g, 250g, and 500g resealable barrier pouches.",
+        "storageInstructions": "Keep sealed in a cool, dry pantry in an airtight container. 12-month shelf life.",
+        "deliveryInformation": "Shipped via express courier partners across all Indian states. Delivered to your doorstep in 2 to 5 days."
+    }
+},
     "faqs": [
       {
         "q": "Is Karela kashri excessively bitter?",
@@ -342,6 +430,25 @@ export const PRODUCTS = [
       "Sun preserved under open skies without artificial flavorings",
       "Complements the spicy warmth of authentic Marcha kashri"
     ],
+    "seo": {
+    "metaTitle": "Buy Gujarati Kothimba Kashari Online | Exotic Wild Melon",
+    "h1": "Exotic Gujarati Kothimba Kashari",
+    "url": "/products/gujarati-kothimba-kashari",
+    "slug": "gujarati-kothimba-kashari",
+    "legacyId": "kothimba-kashari",
+    "imageFilename": "gujarati-kothimba-kashari.webp",
+    "altText": "Gujarati exotic Kothimba Kashari sun-dried wild melon slices",
+    "metaDescription": "Buy rare Gujarati Kothimba Kashari online. Sun-dried wild melon slices from Saurashtra offering sharp appetizing tanginess for Kadhi, curries, and crispy snacking.",
+    "price": "169",
+    "structuredDetails": {
+        "ingredients": "Arid-region wild cucumis callosus melons (કોઠીંબા), pure rock salt, and natural sunlight. 100% wild-harvested and pure.",
+        "tasteAndFlavour": "Sharp, appetizing, citrus-like natural sour tanginess that elevates everyday comfort dishes and Kathiyawadi curries.",
+        "preparationMethod": "Flash-fry for 15 seconds into zesty, crunchy chips, or drop 3 to 4 pieces directly into simmering Kadhi or dal as a natural souring agent.",
+        "packagingSize": "Available in 100g and 250g sealed stand-up pouches.",
+        "storageInstructions": "Store in an airtight jar in a cool, dry place away from moisture. Remains fresh for 12 months.",
+        "deliveryInformation": "Fast pan-India delivery with protective tamper-proof packaging."
+    }
+},
     "faqs": [
       {
         "q": "What is Kothimba or Cucumis Callosus?",
@@ -411,6 +518,25 @@ export const PRODUCTS = [
       "Quick 20 second flash fry in medium warm oil",
       "Beloved accompaniment across both Gujarati and South Indian meals"
     ],
+    "seo": {
+    "metaTitle": "Buy Gujarati Guvar Kashari Online | Sun-Dried Cluster Beans",
+    "h1": "Traditional Gujarati Guvar Kashari",
+    "url": "/products/gujarati-guvar-kashari",
+    "slug": "gujarati-guvar-kashari",
+    "legacyId": "guvar-kashari",
+    "imageFilename": "gujarati-guvar-kashari.webp",
+    "altText": "Gujarati traditional Guvar Kashari sun-dried cluster beans",
+    "metaDescription": "Buy traditional Gujarati Guvar Kashari online. Tender cluster beans blanched and sun-dried under Saurashtra solar heat. Nutty, high-fiber Kathiyawadi accompaniment.",
+    "price": "149",
+    "structuredDetails": {
+        "ingredients": "Tender young cluster beans (ગુવાર ફળી), natural turmeric powder, and Himalayan rock salt. Pure farm produce.",
+        "tasteAndFlavour": "Toasty, nutty, and savory with an airy crunch. Known as kothavarangai vathal in South India and Guvar kashari in Gujarat.",
+        "preparationMethod": "Flash-fry in hot oil for 20 seconds until puffed and golden brown. Or air-fry at 180°C for 2.5 minutes with a light oil spray.",
+        "packagingSize": "Available in 100g, 250g, and 500g resealable freshness pouches.",
+        "storageInstructions": "Store in an airtight container in a dry location. Shelf life is 12 months.",
+        "deliveryInformation": "Delivered across India via express couriers within 2 to 5 business days."
+    }
+},
     "faqs": [
       {
         "q": "Is Guvar kashari the same as Kothavarangai Vathal?",
@@ -482,6 +608,25 @@ export const PRODUCTS = [
       "Preserved naturally under open solar courtyards without chemicals",
       "The ultimate gourmet Marcha kashri for festive and daily dining"
     ],
+    "seo": {
+    "metaTitle": "Buy Bharela Marcha Kashri Online | Stuffed Sun-Dried Chillies",
+    "h1": "Traditional Gujarati Bharela Marcha Kashri",
+    "url": "/products/gujarati-bharela-marcha-kashri",
+    "slug": "gujarati-bharela-marcha-kashri",
+    "legacyId": "bharela-marcha",
+    "imageFilename": "gujarati-bharela-marcha-kashri.webp",
+    "altText": "Gujarati traditional Bharela Marcha Kashri stuffed sun-dried green chilli",
+    "metaDescription": "Buy handcrafted Bharela Marcha Kashri online. Whole green chillies generously stuffed with grandmother's stone-ground methi and rai kuria spices. Royal Kathiyawadi feast.",
+    "price": "169",
+    "structuredDetails": {
+        "ingredients": "Selected whole green chillies (ભરેલા મરચાં), split fenugreek seeds (મેથી કુરિયા), split mustard seeds (રાઈ કુરિયા), asafoetida (હિંગ), turmeric, rock salt, and lemon juice.",
+        "tasteAndFlavour": "Explosive savory depth with the bold pungency of roasted mustard kuria, warm aromatic fenugreek, and tangy sun-dried chilli crunch.",
+        "preparationMethod": "Fry on gentle low-medium heat for 25 to 30 seconds so inner spices toast aromatically without burning. Or air-fry at 165°C for 3.5 minutes.",
+        "packagingSize": "Available in 100g, 250g, and 500g nitrogen-sealed protective pouches.",
+        "storageInstructions": "Keep in an airtight jar in a cool, dry cupboard. 12-month shelf life.",
+        "deliveryInformation": "Express dispatch with protective cushioning across 25,000+ Indian pincodes."
+    }
+},
     "faqs": [
       {
         "q": "What spices are inside Bharela Marcha kashri?",

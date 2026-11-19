@@ -65,7 +65,7 @@ export default function Footer({ onOpenPolicy, onOpenBulkOrder }) {
             </div>
 
             <p className="text-xs sm:text-sm text-[#eaf2ee] leading-relaxed">
-              Authentic Kathiyawadi Marcha Kashri and sun dried delicacies from Saurashtra. Handcrafted with cultured buttermilk, turmeric, and pure rock salt without artificial preservatives.
+              Buy authentic Gujarati Kashri online from Bhagvat Prasadam Heritage. Discover handcrafted traditional Marcha Kashri, Gujarati sun dried food, and authentic Gujarati food products delivered fresh across India.
             </p>
           </div>
 
