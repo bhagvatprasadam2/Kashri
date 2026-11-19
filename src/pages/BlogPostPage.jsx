@@ -1,34 +1,31 @@
 import { useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, ShoppingBag, ArrowRight } from 'lucide-react';
 import { BLOGS } from '../data/products';
+import { updatePageMetadata, DEFAULT_SEO } from '../utils/seo';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
 export default function BlogPostPage({ onOpenBulkOrder, onOpenPolicy }) {
   const { blogId } = useParams();
   const navigate = useNavigate();
-  const blog = BLOGS.find((b) => b.id === blogId) || BLOGS[0];
-  const otherBlogs = BLOGS.filter((b) => b.id !== blog.id);
+  const blog = BLOGS.find((b) => b.id === blogId);
+  const otherBlogs = BLOGS.filter((b) => b.id !== (blog?.id || ''));
 
   useEffect(() => {
+    if (!blog) return;
     window.scrollTo({ top: 0, behavior: 'instant' });
-    document.title = `${blog.title} | Bhagvat Prasadam Heritage`;
 
-    // Dynamic Canonical URL for the specific blog article
-    const canonicalLink = document.querySelector('link[rel="canonical"]');
-    const prevCanonical = canonicalLink ? canonicalLink.getAttribute('href') : 'https://kashri.megascale.co.in/';
     const currentCanonical = `https://kashri.megascale.co.in/blog/${blog.id}`;
-    if (canonicalLink) {
-      canonicalLink.setAttribute('href', currentCanonical);
-    }
 
-    // Dynamic Meta Description for the specific blog article
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
-    if (metaDesc && blog.excerpt) {
-      metaDesc.setAttribute('content', blog.excerpt);
-    }
+    // Full Dynamic Meta Tags (Title, Meta Description, Canonical, Open Graph, Twitter)
+    updatePageMetadata({
+      title: `${blog.title} | Bhagvat Prasadam Heritage`,
+      description: blog.excerpt,
+      canonicalUrl: currentCanonical,
+      ogImage: blog.image,
+      ogType: 'article'
+    });
 
     // Dynamic BlogPosting JSON-LD for rich snippets
     let scriptTag = document.getElementById('blog-jsonld');
@@ -67,18 +64,17 @@ export default function BlogPostPage({ onOpenBulkOrder, onOpenPolicy }) {
     });
 
     return () => {
-      if (canonicalLink && prevCanonical) {
-        canonicalLink.setAttribute('href', prevCanonical);
-      }
-      if (metaDesc && prevDesc) {
-        metaDesc.setAttribute('content', prevDesc);
-      }
+      updatePageMetadata(DEFAULT_SEO);
       const existingScript = document.getElementById('blog-jsonld');
       if (existingScript) {
         existingScript.remove();
       }
     };
   }, [blog, blogId]);
+
+  if (!blog) {
+    return <Navigate to="/" replace />;
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-white">

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, Navigate } from 'react-router-dom';
 import { 
   ShoppingBag, 
   ArrowLeft, 
@@ -16,6 +16,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import { PRODUCTS } from '../data/products';
+import { updatePageMetadata, DEFAULT_SEO } from '../utils/seo';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
@@ -23,42 +24,36 @@ export default function ProductPage({ onOpenBulkOrder, onOpenPolicy }) {
   const { slug } = useParams();
   const navigate = useNavigate();
 
-  // Find product by slug or legacy ID
+  // Find product by canonical slug or legacy ID
   const product = PRODUCTS.find(
     (p) => p.seo?.slug === slug || p.id === slug || p.seo?.legacyId === slug
-  ) || PRODUCTS[0];
+  );
 
-  const seo = useMemo(() => product.seo || {}, [product]);
+  const seo = useMemo(() => product?.seo || {}, [product]);
   const details = useMemo(() => seo.structuredDetails || {}, [seo]);
-  const otherProducts = PRODUCTS.filter((p) => p.id !== product.id);
+  const otherProducts = useMemo(() => PRODUCTS.filter((p) => p.id !== product?.id), [product]);
 
   const [selectedPack, setSelectedPack] = useState('100gm');
   const [openFaq, setOpenFaq] = useState(null);
 
   // Dynamic SEO injection on mount & change
   useEffect(() => {
+    if (!product) return;
     window.scrollTo({ top: 0, behavior: 'instant' });
 
-    // Meta Title
-    const pageTitle = seo.metaTitle || `${product.name} | Kashri`;
-    document.title = pageTitle;
-
-    // Canonical Link
     const currentCanonical = `https://kashri.megascale.co.in${seo.url || `/products/${product.id}`}`;
-    const canonicalLink = document.querySelector('link[rel="canonical"]');
-    const prevCanonical = canonicalLink ? canonicalLink.getAttribute('href') : 'https://kashri.megascale.co.in/';
-    if (canonicalLink) {
-      canonicalLink.setAttribute('href', currentCanonical);
-    }
+    const pageImage = `https://kashri.megascale.co.in/${seo.imageFilename || 'vadhvani-marcha-kashri.webp'}`;
 
-    // Meta Description
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
-    if (metaDesc && seo.metaDescription) {
-      metaDesc.setAttribute('content', seo.metaDescription);
-    }
+    // Full Dynamic Meta Tags (Title, Meta Description, Canonical, Open Graph, Twitter)
+    updatePageMetadata({
+      title: seo.metaTitle || `${product.name} | Kashri`,
+      description: seo.metaDescription || product.description,
+      canonicalUrl: currentCanonical,
+      ogImage: pageImage,
+      ogType: 'product'
+    });
 
-    // Dynamic Product Schema.org JSON-LD
+    // Dynamic Product Schema.org JSON-LD (Free of unsupported review/rating warnings)
     let scriptTag = document.getElementById('product-jsonld');
     if (!scriptTag) {
       scriptTag = document.createElement('script');
@@ -74,9 +69,9 @@ export default function ProductPage({ onOpenBulkOrder, onOpenPolicy }) {
           '@type': 'Product',
           '@id': `${currentCanonical}#product`,
           'name': seo.h1 || product.name,
-          'image': `https://kashri.megascale.co.in/${seo.imageFilename || 'vadhvani-transparent.webp'}`,
+          'image': pageImage,
           'description': seo.metaDescription || product.description,
-          'sku': product.id,
+          'sku': `BP-${product.id.toUpperCase()}`,
           'brand': {
             '@type': 'Brand',
             'name': 'Bhagvat Prasadam Heritage'
@@ -128,32 +123,7 @@ export default function ProductPage({ onOpenBulkOrder, onOpenPolicy }) {
                 }
               }
             }
-          },
-          'aggregateRating': {
-            '@type': 'AggregateRating',
-            'ratingValue': product.rating ? String(product.rating) : '5.0',
-            'bestRating': '5',
-            'worstRating': '1',
-            'ratingCount': product.reviewsCount ? String(product.reviewsCount) : '218',
-            'reviewCount': product.reviewsCount ? String(product.reviewsCount) : '218'
-          },
-          'review': [
-            {
-              '@type': 'Review',
-              'author': {
-                '@type': 'Person',
-                'name': 'Verified Patrons of Saurashtra'
-              },
-              'datePublished': '2026-10-20',
-              'reviewBody': `Authentic Kathiyawadi taste! Handcrafted sun-cured ${product.name} that flash-fries in 20 seconds with crisp crunch and delightful buttermilk flavor.`,
-              'reviewRating': {
-                '@type': 'Rating',
-                'ratingValue': '5',
-                'bestRating': '5',
-                'worstRating': '1'
-              }
-            }
-          ]
+          }
         },
         {
           '@type': 'BreadcrumbList',
@@ -183,18 +153,45 @@ export default function ProductPage({ onOpenBulkOrder, onOpenPolicy }) {
     });
 
     return () => {
-      if (canonicalLink && prevCanonical) {
-        canonicalLink.setAttribute('href', prevCanonical);
-      }
-      if (metaDesc && prevDesc) {
-        metaDesc.setAttribute('content', prevDesc);
-      }
+      updatePageMetadata(DEFAULT_SEO);
       const existingScript = document.getElementById('product-jsonld');
       if (existingScript) {
         existingScript.remove();
       }
     };
   }, [product, seo]);
+
+  // Handle Invalid Product Slug: Clean 404 state
+  if (!product) {
+    return (
+      <div className="min-h-screen flex flex-col bg-white">
+        <Navbar onOpenBulkOrder={onOpenBulkOrder} />
+        <main className="flex-1 py-16 px-4 text-center max-w-xl mx-auto flex flex-col items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-[#fdf6e9] border border-[#f5dfb8] flex items-center justify-center text-2xl mb-4">
+            🔍
+          </div>
+          <h1 className="font-1 text-2xl sm:text-3xl font-extrabold text-[#164e3d] mb-2">
+            Product Variety Not Found
+          </h1>
+          <p className="text-xs sm:text-sm text-[#55695f] mb-6 leading-relaxed">
+            The requested Gujarati Kashri delicacy URL does not exist or has been relocated to our main catalog.
+          </p>
+          <button
+            onClick={() => navigate('/')}
+            className="bg-[#164e3d] hover:bg-[#113e30] text-white px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-xs cursor-pointer"
+          >
+            Explore All 7 Kashri Delicacies
+          </button>
+        </main>
+        <Footer onOpenPolicy={onOpenPolicy} onOpenBulkOrder={onOpenBulkOrder} />
+      </div>
+    );
+  }
+
+  // Canonical Slug Enforcement: If accessed via legacy ID or alternate slug, redirect cleanly
+  if (slug !== product.seo?.slug) {
+    return <Navigate to={`/products/${product.seo.slug}`} replace />;
+  }
 
   const whatsappMessage = encodeURIComponent(
     `Hello Bhagvat Prasadam, I want to inquire about ordering ${product.name} (${selectedPack}) from your Kashri website: https://kashri.megascale.co.in${seo.url || ''}`
