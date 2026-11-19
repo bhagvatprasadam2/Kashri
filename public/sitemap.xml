@@ -1,121 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kashri.megascale.co.in/</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/vadhvani-marcha-kashri.webp</image:loc>
-      <image:title>Authentic Gujarati Marcha Kashri &amp; Sun-Dried Delicacies</image:title>
-      <image:caption>Handcrafted Gujarati Kashri delicacies from Bhagvat Prasadam Heritage</image:caption>
-    </image:image>
   </url>
-
-  <!-- Product Pages -->
   <url>
     <loc>https://kashri.megascale.co.in/products/gujarati-marcha-kashri</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/gujarati-marcha-kashri.webp</image:loc>
-      <image:title>Traditional Gujarati Marcha Kashri</image:title>
-      <image:caption>Crispy sun dried green chilli sticks steeped in cultured buttermilk</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/products/vadhvani-marcha-kashri</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/vadhvani-marcha-kashri.webp</image:loc>
-      <image:title>Authentic Vadhvani Marcha Kashri</image:title>
-      <image:caption>Famous Surendranagar Vadhvani chillies sun cured with rock salt and buttermilk</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/products/gujarati-bhinda-kashri</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/gujarati-bhinda-kashri.webp</image:loc>
-      <image:title>Traditional Gujarati Bhinda Kashri</image:title>
-      <image:caption>Tender sun dried spiced okra crisps for Kathiyawadi dining</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/products/gujarati-karela-kashri</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/gujarati-karela-kashri.webp</image:loc>
-      <image:title>Traditional Gujarati Karela Kashri</image:title>
-      <image:caption>Crispy sun dried bitter gourd wafers cured with buttermilk and turmeric</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/products/gujarati-guvar-kashari</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/gujarati-guvar-kashari.webp</image:loc>
-      <image:title>Traditional Gujarati Guvar Kashari</image:title>
-      <image:caption>Sun dried tender cluster beans seasoned with Saurashtra rock salt</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/products/gujarati-kothimba-kashari</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/gujarati-kothimba-kashari.webp</image:loc>
-      <image:title>Traditional Gujarati Kothimba Kashari</image:title>
-      <image:caption>Wild mini cucumber sun dried snack bursting with tangy digestive crunch</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/products/gujarati-bharela-marcha-kashri</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://kashri.megascale.co.in/gujarati-bharela-marcha-kashri.webp</image:loc>
-      <image:title>Gujarati Bharela Marcha Kashri</image:title>
-      <image:caption>Stuffed Kathiyawadi dry masala chillies sun cured to perfection</image:caption>
-    </image:image>
   </url>
-
-  <!-- Blog & Heritage Articles -->
   <url>
     <loc>https://kashri.megascale.co.in/blog/why-marcha-kachri-is-beloved</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/blog/from-vadhvan-fields-to-kitchen</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/blog/health-benefits-karela-bhinda-guvar</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kashri.megascale.co.in/blog/how-to-flash-fry-and-air-fry</loc>
     <lastmod>2026-11-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
