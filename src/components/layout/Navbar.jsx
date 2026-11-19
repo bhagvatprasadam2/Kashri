@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, ShoppingBag } from 'lucide-react';
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logo.webp';
 import AnnouncementBar from '../common/AnnouncementBar';
 
 export default function Navbar() {
@@ -99,6 +99,9 @@ export default function Navbar() {
               <img
                 src={logoImg}
                 alt="Bhagvat Prasadam Heritage Kashri Logo"
+                width="56"
+                height="56"
+                fetchPriority="high"
                 className="w-12 h-12 sm:w-14 sm:h-14 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-xs"
               />
               <div>

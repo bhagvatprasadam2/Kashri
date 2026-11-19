@@ -57,7 +57,13 @@ export function QuickViewModal({ product, isOpen, onClose }) {
                       selectedImg === idx ? 'border-[#164e3d] ring-1 ring-[#164e3d]' : 'border-[#e2ebe5] opacity-70'
                     }`}
                   >
-                    <img src={img} alt="" className="w-full h-full object-cover" />
+                    <img
+                      src={img}
+                      alt={`${product.name} thumbnail ${idx + 1}`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                   </button>
                 ))}
               </div>

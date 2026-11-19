@@ -7,6 +7,13 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
     <section id="hero" className="relative bg-white border-b border-[#e2ebe5] py-2 sm:py-3 md:py-4 lg:py-6 px-3 sm:px-4 md:px-6 lg:px-8 flex flex-col justify-center">
       <div className="max-w-7xl mx-auto w-full">
 
+        {/* Primary SEO H1 Heading */}
+        <div className="mb-2.5 sm:mb-3.5 md:mb-4">
+          <h1 className="font-1 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#164e3d] leading-tight tracking-tight">
+            Authentic Gujarati Marcha Kashri &amp; Traditional Sun-Dried Delicacies
+          </h1>
+        </div>
+
         {/* ============================================================== */}
         {/* MOBILE VIEW (< md): Optimized to fit entirely in 1 phone screen */}
         {/* ============================================================== */}
@@ -14,9 +21,9 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
           {/* 1. Header: Product Title, Gujarati Badge & Subheading */}
           <div>
             <div className="flex items-center gap-2 flex-wrap">
-              <h1 className="font-1 text-xl sm:text-2xl font-extrabold text-[#164e3d] leading-tight tracking-tight">
+              <h2 className="font-1 text-xl sm:text-2xl font-extrabold text-[#164e3d] leading-tight tracking-tight">
                 {p.name}
-              </h1>
+              </h2>
               <span className="font-gujarati text-xs sm:text-sm font-bold text-[#c27803] bg-[#fdf6e9] px-2 py-0.5 rounded-md border border-[#f5dfb8]">
                 {p.gujaratiName}
               </span>
@@ -82,7 +89,11 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
                 <img
                   key={p.id}
                   src={p.transparentImage || p.bannerImage || p.mainImage}
-                  alt={p.name}
+                  alt={`${p.name} - Sun-Dried Gujarati Delicacy`}
+                  width="160"
+                  height="160"
+                  fetchPriority="high"
+                  decoding="async"
                   className="max-h-[145px] sm:max-h-[160px] w-auto object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.16)] transition-transform duration-300 active:scale-105"
                 />
               </a>
@@ -141,9 +152,9 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
             {/* Heading & Gujarati Script */}
             <div>
               <div className="flex items-center gap-3 flex-wrap">
-                <h1 className="font-1 text-2xl lg:text-4xl xl:text-5xl font-extrabold text-[#164e3d] leading-tight tracking-tight">
+                <h2 className="font-1 text-2xl lg:text-4xl xl:text-5xl font-extrabold text-[#164e3d] leading-tight tracking-tight">
                   {p.name}
-                </h1>
+                </h2>
                 <span className="font-gujarati text-lg lg:text-2xl xl:text-3xl font-bold text-[#c27803] bg-[#fdf6e9] px-2.5 py-0.5 rounded-lg border border-[#f5dfb8]">
                   {p.gujaratiName}
                 </span>
@@ -259,7 +270,11 @@ export default function Hero({ products, activeProduct, onSelectProduct }) {
                 <img
                   key={p.id}
                   src={p.transparentImage || p.bannerImage || p.mainImage}
-                  alt={p.name}
+                  alt={`${p.name} - Sun-Dried Gujarati Delicacy`}
+                  width="480"
+                  height="480"
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full max-h-[320px] md:max-h-[360px] lg:max-h-[420px] xl:max-h-[480px] object-contain filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.18)] transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </a>

@@ -380,6 +380,10 @@ export default function OrderFunnel({ products }) {
                             <img
                               src={p.image}
                               alt={p.name}
+                              width="48"
+                              height="48"
+                              loading="lazy"
+                              decoding="async"
                               className="w-12 h-12 rounded-xl object-cover border border-[#e2ebe5] flex-shrink-0"
                             />
                             <div className="flex-1 min-w-0">

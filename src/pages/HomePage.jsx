@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { PRODUCTS } from '../data/products';
 import Navbar from '../components/layout/Navbar';
 import Hero from '../components/sections/Hero';
@@ -17,6 +18,21 @@ export default function HomePage({
   onOpenBulkOrder,
   onOpenPolicy
 }) {
+  useEffect(() => {
+    document.title = 'Kashri – Authentic Gujarati Sun-Dried Delicacies Online';
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute('href', 'https://kashri.megascale.co.in/');
+    }
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Discover authentic Gujarati Marcha Kashri and traditional sun-dried delicacies. Explore delicious Gujarati food products and order online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-white overflow-x-clip w-full max-w-full relative">
       {/* 1 & 2. Unified Sticky Header (Announcement Bar & Navigation) */}

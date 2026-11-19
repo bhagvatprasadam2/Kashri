@@ -14,6 +14,70 @@ export default function BlogPostPage({ onOpenBulkOrder, onOpenPolicy }) {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
     document.title = `${blog.title} | Bhagvat Prasadam Heritage`;
+
+    // Dynamic Canonical URL for the specific blog article
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    const prevCanonical = canonicalLink ? canonicalLink.getAttribute('href') : 'https://kashri.megascale.co.in/';
+    const currentCanonical = `https://kashri.megascale.co.in/blog/${blog.id}`;
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', currentCanonical);
+    }
+
+    // Dynamic Meta Description for the specific blog article
+    const metaDesc = document.querySelector('meta[name="description"]');
+    const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
+    if (metaDesc && blog.excerpt) {
+      metaDesc.setAttribute('content', blog.excerpt);
+    }
+
+    // Dynamic BlogPosting JSON-LD for rich snippets
+    let scriptTag = document.getElementById('blog-jsonld');
+    if (!scriptTag) {
+      scriptTag = document.createElement('script');
+      scriptTag.id = 'blog-jsonld';
+      scriptTag.type = 'application/ld+json';
+      document.head.appendChild(scriptTag);
+    }
+    scriptTag.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      '@id': `${currentCanonical}#article`,
+      'headline': blog.title,
+      'description': blog.excerpt,
+      'image': blog.image,
+      'datePublished': '2026-10-01',
+      'author': {
+        '@type': 'Organization',
+        'name': blog.author || 'Bhagvat Prasadam Heritage',
+        'url': 'https://kashri.megascale.co.in/'
+      },
+      'publisher': {
+        '@type': 'Organization',
+        'name': 'Bhagvat Prasadam Heritage',
+        'url': 'https://kashri.megascale.co.in/',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://kashri.megascale.co.in/logo.webp'
+        }
+      },
+      'mainEntityOfPage': {
+        '@type': 'WebPage',
+        '@id': currentCanonical
+      }
+    });
+
+    return () => {
+      if (canonicalLink && prevCanonical) {
+        canonicalLink.setAttribute('href', prevCanonical);
+      }
+      if (metaDesc && prevDesc) {
+        metaDesc.setAttribute('content', prevDesc);
+      }
+      const existingScript = document.getElementById('blog-jsonld');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
   }, [blog, blogId]);
 
   return (
@@ -66,6 +130,8 @@ export default function BlogPostPage({ onOpenBulkOrder, onOpenPolicy }) {
           <img
             src={blog.image}
             alt={blog.title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>
@@ -115,6 +181,8 @@ export default function BlogPostPage({ onOpenBulkOrder, onOpenPolicy }) {
                     <img
                       src={item.image}
                       alt={item.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

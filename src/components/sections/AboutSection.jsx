@@ -39,6 +39,8 @@ export default function AboutSection() {
                   <img
                     src="https://cdn.shopify.com/s/files/1/0673/6723/9829/files/bharela-marcha.jpg?v=1782468225"
                     alt="Traditional Kashri Making Heritage"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-[380px] sm:h-[440px] object-cover rounded-2xl transform transition-transform duration-500 hover:scale-105"
                   />
                 </a>
